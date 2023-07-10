@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <h1>
+         It's all about JavaScript <br />Inspect to see what i have done
+         <br />Go to console to view all
+      </h1>
+      <ol>
+         <li>
+            regular <br />
+            console.log("hello");
+         </li>
+         <li>
+            interpolated <br />
+            console.log("Hello i am a %$ String!", "MAN");
+         </li>
+         <li>
+            styled <br />
+            console.log("%c I am some great text", "font-size:50px;
+            background:red"); text-shadow:10px 10px 0 blue;
+         </li>
+         <li>
+            warning!<br />
+            console.warn("OH NOOO");
+         </li>
+         <li>
+            Error<br />
+            console.error("shit!");
+         </li>
+         <li>
+            Info <br />
+            console.info("Crocodiles eat 3-4 people per year");
+         </li>
+         <li>
+            Testing <br />
+            const p = document.querySelector("p");
+            console.assert(p.classList.contains("ouch"), "That is wrong");
+         </li>
+         <li>
+            Clearing <br />
+            console.clear();
+         </li>
+         <li>
+            Viewing DOM Elements<br />
+            console.log(p) <br />
+            console.dir(p);
+         </li>
+         <li>
+            Grouping together <br />
+            dogs.forEach(dog => { <br />
+            console.groupCollapsed(`${dog.name}`) <br />
+            console.log(`This is${dog.name}`); <br />
+            console.log(`${dog.name} is ${dog.age} years old`); <br />
+            console.log(`${dog.name} is ${dog.age * 7} dog years old `); <br />
+            console.groupEnd(`${dog.name}`) <br />
+
+            });
+         </li>
+         <li>
+            Counting<br />
+            console.count("wes"); <br />
+            console.count("wes"); <br />
+            console.count("wes"); <br />
+            console.count("steve"); <br />
+            console.count("wes"); <br />
+            console.count("steve"); <br />
+            console.count("steve"); <br />
+            console.count("wes"); <br />
+         </li>
+          <li>
+            Table<br />
+            console.table(dogs);
+         </li>
+      </ol>
+      <p onclick="makeGreen()">xBREAKxDOWNx</p>
+
+      <style>
+         body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+               url(./image/street.jpg);
+            background-size: cover;
+            background-repeat: repeat;
+            color: white;
+            font-size: xx-large;
+         }
+
+         h1 {
+            text-align: center;
+         }
+
+         li {
+            color: white;
+            font-size: 3vh;
+         }
+      </style>
+      <script>
+         const dogs = [
+            { name: "snicker", age: 2 },
+            { name: "hugo", age: 8 },
+         ];
+         function makeGreen() {
+            const p = document.querySelector("p");
+            p.style.color = "#BADA55 ";
+            P.style.fontsize = "50px";
+         }
+
+//             regular 
+            console.log("hello");
+        
+            // interpolated 
+            console.log("Hello i am a %$ String!", "MAN");
+      
+            // styled 
+            // console.log("%c I am some great text", "font-size:50px;
+            // background:red"); text-shadow:10px 10px 0 blue;)
+        
+            // warning!
+            console.warn("OH NOOO");
+        
+            // Error
+            console.error("shit!");
+      
+            // Info 
+            console.info("Crocodiles eat 3-4 people per year");
+        
+            // Testing 
+            const p = document.querySelector("p");
+            console.assert(p.classList.contains("ouch"), "That is wrong");
+       
+            // Clearing 
+            
+            // console.clear();
+       
+            // Viewing DOM Elements
+            console.log(p) 
+            console.dir(p);
+        
+            // Grouping together
+            dogs.forEach(dog => { 
+            console.groupCollapsed(`${dog.name}`) 
+            console.log(`This is${dog.name}`); 
+            console.log(`${dog.name} is ${dog.age} years old`);
+            console.log(`${dog.name} is ${dog.age * 7} dog years old `);
+            console.groupEnd(`${dog.name}`) 
+
+            });
+    
+            // Counting
+            console.count("wes"); 
+            console.count("wes"); 
+            console.count("wes"); 
+            console.count("steve")
+            console.count("wes"); 
+            console.count("steve")
+            console.count("steve")
+            console.count("wes"); 
+         
+            // Table
+            console.table(dogs);
+    
+
+      </script>
+   </body>
+</html>
